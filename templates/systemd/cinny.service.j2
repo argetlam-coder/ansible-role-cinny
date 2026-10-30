@@ -27,7 +27,7 @@ ExecStartPre={{ devture_systemd_docker_base_host_command_docker }} create \
       --rm \
       --name={{ cinny_identifier }} \
       --log-driver=none \
-      --user={{ cinny_uid }}:{{ cinny_gid }} \
+      --user={{ cinny_container_uid }}:{{ cinny_container_gid }} \
       --cap-drop=ALL \
       --read-only \
       --network={{ cinny_container_network }} \

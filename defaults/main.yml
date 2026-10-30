@@ -26,6 +26,12 @@ cinny_version: v4.12.8
 cinny_uid: ""
 cinny_gid: ""
 
+# Controls the user that the container runs as. Set to `0` to run as root.
+cinny_container_uid: "{{ cinny_uid }}"
+
+# Controls the group that the container runs as. Set to `0` to run as root.
+cinny_container_gid: "{{ cinny_gid }}"
+
 # The scheme used for serving Cinny.
 cinny_scheme: https
 
